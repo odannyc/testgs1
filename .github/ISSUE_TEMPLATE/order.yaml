@@ -1,0 +1,52 @@
+# gitshop:order-template
+name: 🛒 Place an Order
+description: Order products from our store
+title: "[ORDER] "
+labels: ["gitshop:order", "gitshop:status:pending-payment"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Welcome to our store!
+        Fill out the form below to place your order. You'll receive a payment link after submitting.
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      description: Select the product you want to order
+      options:
+        - "Example T-Shirt — $25.00 (SKU:EXAMPLE_TSHIRT)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: quantity
+    attributes:
+      label: Quantity
+      options:
+        - "1"
+        - "2"
+        - "3"
+        - "4"
+        - "5"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: size
+    attributes:
+      label: Size
+      options:
+        - "S"
+        - "M"
+        - "L"
+        - "XL"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Note:** The SKU in parentheses (e.g., `SKU:PRODUCT_NAME`) must match exactly with your `gitshop.yaml` file.
