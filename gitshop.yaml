@@ -5,20 +5,21 @@
 shop:
   name: "odannyc/testgs1"
   currency: "usd"
-  manager: ""
+  manager: "odannyc"
   shipping:
     flat_rate_cents: 500
     carrier: "USPS"
 
 products:
-  - sku: "EXAMPLE_TSHIRT"
-    name: "Example T-Shirt"
-    description: "Sample product — replace this with your own catalog."
-    unit_price_cents: 2500
+  - sku: "COFFEE_BLEND_V1"
+    name: "Coffee Blend V1"
+    description: "The coffee blend V1 is a blend of ethiopia and brazil, making it perfect for any situtation."
+    unit_price_cents: 1600
     active: true
     options:
-      - name: "size"
-        label: "Size"
+      - name: "grind"
+        label: "Grind"
         type: "dropdown"
         required: true
-        values: ["S", "M", "L", "XL"]
+        values: ["Ground", "Whole Bean"]
+        
