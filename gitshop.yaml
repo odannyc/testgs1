@@ -1,0 +1,24 @@
+# GitShop Configuration
+# This file defines your product catalog and store settings.
+# The product below is a sample. Replace it with your own items.
+
+shop:
+  name: "odannyc/testgs1"
+  currency: "usd"
+  manager: ""
+  shipping:
+    flat_rate_cents: 500
+    carrier: "USPS"
+
+products:
+  - sku: "EXAMPLE_TSHIRT"
+    name: "Example T-Shirt"
+    description: "Sample product — replace this with your own catalog."
+    unit_price_cents: 2500
+    active: true
+    options:
+      - name: "size"
+        label: "Size"
+        type: "dropdown"
+        required: true
+        values: ["S", "M", "L", "XL"]
