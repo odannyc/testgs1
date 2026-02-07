@@ -30,17 +30,7 @@ body:
             - "5"
       validations:
         required: true
-    - type: dropdown
-      id: grind
+    - type: input
       attributes:
-        label: Grind
-        options:
-            - Ground
-            - Whole Bean
-      validations:
-        required: true
-    - type: markdown
-      attributes:
-        value: |
-            ---
-            **Note:** The SKU in parentheses (e.g., `SKU:PRODUCT_NAME`) must match exactly with your `gitshop.yaml` file.
+        label: Notes
+        description: Any notes you may have about your order
