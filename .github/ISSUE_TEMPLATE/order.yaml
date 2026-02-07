@@ -1,52 +1,57 @@
 # gitshop:order-template
-name: 🛒 Place an Order
+name: "\U0001F6D2 Place an Order"
 description: Order products from our store
 title: "[ORDER] "
 labels: ["gitshop:order", "gitshop:status:pending-payment"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ## Welcome to our store!
-        Fill out the form below to place your order. You'll receive a payment link after submitting.
-
-  - type: dropdown
-    id: product
-    attributes:
-      label: Product
-      description: Select the product you want to order
-      options:
-        - "Example T-Shirt — $25.00 (SKU:EXAMPLE_TSHIRT)"
-    validations:
-      required: true
-
-  - type: dropdown
-    id: quantity
-    attributes:
-      label: Quantity
-      options:
-        - "1"
-        - "2"
-        - "3"
-        - "4"
-        - "5"
-    validations:
-      required: true
-
-  - type: dropdown
-    id: size
-    attributes:
-      label: Size
-      options:
-        - "S"
-        - "M"
-        - "L"
-        - "XL"
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ---
-        **Note:** The SKU in parentheses (e.g., `SKU:PRODUCT_NAME`) must match exactly with your `gitshop.yaml` file.
+    - type: markdown
+      attributes:
+        value: |
+            ## Welcome to our store!
+            Fill out the form below to place your order. You'll receive a payment link after submitting.
+    - type: dropdown
+      id: product
+      attributes:
+        label: Product
+        description: Select the product you want to order
+        options:
+            - Coffee Blend V1 — $16.00 (SKU:COFFEE_BLEND_V1)
+      validations:
+        required: true
+    - type: dropdown
+      id: quantity
+      attributes:
+        label: Quantity
+        options:
+            - "1"
+            - "2"
+            - "3"
+            - "4"
+            - "5"
+      validations:
+        required: true
+    - type: dropdown
+      id: size
+      attributes:
+        label: Size
+        options:
+            - "S"
+            - "M"
+            - "L"
+            - "XL"
+      validations:
+        required: true
+    - type: markdown
+      attributes:
+        value: |
+            ---
+            **Note:** The SKU in parentheses (e.g., `SKU:PRODUCT_NAME`) must match exactly with your `gitshop.yaml` file.
+    - type: dropdown
+      id: grind
+      attributes:
+        label: Grind
+        options:
+            - Ground
+            - Whole Bean
+      validations:
+        required: true
