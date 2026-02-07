@@ -30,6 +30,15 @@ body:
             - "5"
       validations:
         required: true
+    - type: dropdown
+      id: grind
+      attributes:
+        label: Grind
+        options:
+            - Ground
+            - Whole Bean
+      validations:
+        required: true
     - type: input
       attributes:
         label: Notes
