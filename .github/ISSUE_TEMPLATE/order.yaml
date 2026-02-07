@@ -31,14 +31,12 @@ body:
       validations:
         required: true
     - type: dropdown
-      id: size
+      id: grind
       attributes:
-        label: Size
+        label: Grind
         options:
-            - "S"
-            - "M"
-            - "L"
-            - "XL"
+            - Ground
+            - Whole Bean
       validations:
         required: true
     - type: markdown
