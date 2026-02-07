@@ -44,12 +44,3 @@ body:
         value: |
             ---
             **Note:** The SKU in parentheses (e.g., `SKU:PRODUCT_NAME`) must match exactly with your `gitshop.yaml` file.
-    - type: dropdown
-      id: grind
-      attributes:
-        label: Grind
-        options:
-            - Ground
-            - Whole Bean
-      validations:
-        required: true
